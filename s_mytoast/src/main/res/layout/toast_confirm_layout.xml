@@ -1,5 +1,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#48000000"
@@ -25,7 +26,7 @@
             android:text="提示"
             android:visibility="gone"
             android:textColor="#000"
-            android:textSize="35dp"/>
+            android:textSize="32sp"/>
 
         <RelativeLayout
             android:id="@+id/lin_views"
@@ -36,14 +37,14 @@
             android:id="@+id/txt_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
+            android:gravity="left"
             android:minHeight="45dp"
             android:padding="10dp"
             android:singleLine="false"
             android:visibility="gone"
             android:text="内容"
             android:textColor="#252525"
-            android:textSize="30dp"/>
+            android:textSize="23sp"/>
 
         <ImageView
             android:layout_width="match_parent"
@@ -59,44 +60,52 @@
             <TextView
                 android:id="@+id/btn_cancel"
                 android:layout_width="0dp"
-                android:layout_height="60dp"
+                android:layout_height="50dp"
                 android:layout_marginRight="1dp"
                 android:layout_weight="50"
                 android:gravity="center"
                 android:text="取消"
                 android:textColor="#000"
-                android:textSize="30dp"/>
+                app:autoSizeMaxTextSize="30sp"
+                app:autoSizeMinTextSize="15sp"
+                app:autoSizeTextType="uniform"/>
 
             <TextView
                 android:id="@+id/btn_confirm"
                 android:layout_width="0dp"
-                android:layout_height="60dp"
+                android:layout_height="50dp"
                 android:layout_weight="50"
                 android:gravity="center"
                 android:text="确定"
                 android:textColor="#000"
-                android:textSize="30dp"/>
+                app:autoSizeMaxTextSize="30sp"
+                app:autoSizeMinTextSize="15sp"
+                app:autoSizeTextType="uniform"/>
             <TextView
                 android:id="@+id/btn_center"
                 android:layout_width="0dp"
-                android:layout_height="60dp"
+                android:layout_height="50dp"
                 android:layout_marginRight="1dp"
                 android:layout_weight="50"
                 android:gravity="center"
                 android:text="中键"
                 android:textColor="#000"
-                android:textSize="30dp"
+                app:autoSizeMaxTextSize="30sp"
+                app:autoSizeMinTextSize="15sp"
+                app:autoSizeTextType="uniform"
                 android:visibility="gone"/>
             <TextView
                 android:id="@+id/btn_right"
                 android:layout_width="0dp"
-                android:layout_height="60dp"
+                android:layout_height="50dp"
                 android:layout_marginRight="1dp"
                 android:layout_weight="50"
                 android:gravity="center"
                 android:text="右键"
                 android:textColor="#000"
-                android:textSize="30dp"
+                app:autoSizeMaxTextSize="30sp"
+                app:autoSizeMinTextSize="15sp"
+                app:autoSizeTextType="uniform"
                 android:visibility="gone"/>
         </LinearLayout>
     </LinearLayout>
